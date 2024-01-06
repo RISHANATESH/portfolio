@@ -1,0 +1,25 @@
+*{
+    margin: 0; 
+   padding: 0;
+   font-family: sans-serif;
+   background: fixed;
+   background-color:#eef4ed ;
+}
+.center{
+    width:50%;
+    
+    margin-right: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    display: block;
+    
+}
+
+.parts{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 10px;
+    font-size:small;
+    font-style: oblique;
+    text-shadow: #8da9c4;
+}

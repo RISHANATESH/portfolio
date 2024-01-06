@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+</head>
+<body>
+    <style>
+        /* Your CSS styles */
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background-color:#eef4ed ;
+        }
+        .container {
+          padding: 70px;
+        }
+        
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <h1><B>WELCOME</B></h1>
+        <p id="greeting"></p>
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" id="nameInput">
+          <br><br>
+          <input type="email" placeholder="Your Email" id="emailInput">
+          <br><br>
+          <textarea placeholder="Your Message" id="messageInput"></textarea>
+          <br><br>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    
+      <script>
+        // Get current hour
+        const currentTime = new Date().getHours();
+    
+        // Set greeting based on time of day
+        let greeting;
+        if (currentTime < 12) {
+          greeting = "Good morning!";
+        } else if (currentTime < 18) {
+          greeting = "Good afternoon!";
+        } else {
+          greeting = "Good evening!";
+        }
+    
+        // Display greeting
+        document.getElementById('greeting').textContent = greeting;
+    
+        // Function to handle form submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          const name = document.getElementById('nameInput').value;
+          const email = document.getElementById('emailInput').value;
+          const message = document.getElementById('messageInput').value;
+    
+          // For demonstration purposes, display the collected data in console
+          console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+          alert('Message To Risha sent successfully!'); // Alert message, replace with actual send function
+        });
+      </script>
+
+
+<div class="contacts"><br>
+    <h2>Reach me at:</h2>
+    <h3><i><top>rishanatesh@gmail.com</top></i></h3>
+</div>
+</body>
+</html>
